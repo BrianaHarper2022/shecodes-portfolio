@@ -1,14 +1,46 @@
-body {
-    background: white;
+:root {
+    --heading-font: "Inria Serif", serif;
+    --default-font: "Inter Tight", sans-serif;
+    --primary-color: #f9f7fe;
+    --secondary-color: #272142;
 }
-h1 {
-    font-family: "Inria Serif", serif;
-    font-weight: 400;
-    font-size: 50px;
+body {
+    background: var(--primary-color);
+    color: black;
+    font-family: var(--default-font);
+
+}
+.hero {
+    border-radius: 4px;
+    padding: 160px 20px;
     text-align: center;
 }
-p {
-    font-family: "Inter Tight", sans-serif;
-    font-weight: 500;
-    font-size: 20px;
+.hero h1 {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 96px;
+    
+}
+.hero p {
+    color: var(--secondary-color);
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    
+    
+}
+.hero h2 {
+    font-family: var(--default-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2px;
+    
+}
+.btn {
+    background: var(--secondary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
