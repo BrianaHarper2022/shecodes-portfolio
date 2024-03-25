@@ -3,6 +3,7 @@
     --default-font: "Inter Tight", sans-serif;
     --primary-color: #f9f7fe;
     --secondary-color: #272142;
+    
 }
 body {
     background: var(--primary-color);
@@ -10,31 +11,37 @@ body {
     font-family: var(--default-font);
 
 }
+h1, h2 {
+    font-family: var(--heading-font);
+  font-weight: bold;
+}
+h1 {
+  font-size: 96px;
+  line-height: 1.5;
+}
+h2 {
+  font-size: 45px;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
 .hero {
-    border-radius: 4px;
+    background: var(--primary-color);
     padding: 160px 20px;
     text-align: center;
 }
-.hero h1 {
-    font-family: var(--heading-font);
-    font-weight: bold;
-    font-size: 96px;
-    
-}
-.hero p {
+ .hero p {
     color: var(--secondary-color);
     font-weight: 600;
     font-size: 36px;
     margin: 0;
-    
-    
 }
-.hero h2 {
-    font-family: var(--default-font);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 2px;
-    
+ .hero h2 {
+    font-size: 24px; 
+    font-family: var(--default-font); 
+    line-height: 1.5;
 }
 .btn {
     background: var(--secondary-color);
@@ -43,4 +50,34 @@ body {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+.btn-branding-outline {
+    border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+.project-desciption {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 44px;
+    line-height: 2;
+  }
+
+  h2 {
+    font-size: 44px;
+  }
+
+  .hero {
+    padding: 80px 20px;
+  }
+
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
