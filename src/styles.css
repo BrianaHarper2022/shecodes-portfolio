@@ -6,7 +6,7 @@
     
 }
 body {
-    background: var(--primary-color);
+    
     color: black;
     font-family: var(--default-font);
 
@@ -42,6 +42,12 @@ p {
     font-size: 24px; 
     font-family: var(--default-font); 
     line-height: 1.5;
+}
+.latest {
+      font-size: 24px; 
+    font-family: var(--default-font); 
+    line-height: 1.5;
+    font-weight: bold;
 }
 .btn {
     background: var(--secondary-color);
